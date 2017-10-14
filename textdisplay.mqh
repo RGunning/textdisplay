@@ -12,10 +12,19 @@
 int      GetSystemMetrics(int nIndex);
 #import
 //---------------------------------------------------------------------
-#define		SM_CXSCREEN				0
-#define		SM_CYSCREEN				1
+#ifndef SM_CXSCREEN
+#define      SM_CXSCREEN         0
+#endif
+#ifndef SM_CYSCREEN
+#define		SM_CYSCREEN          1
+#endif
+#ifndef SM_CXFULLSCREEN
 #define		SM_CXFULLSCREEN		16
+#endif
+#ifndef SM_CYFULLSCREEN
 #define		SM_CYFULLSCREEN		17
+#endif
+
 //---------------------------------------------------------------------
 
 //---------------------------------------------------------------------
